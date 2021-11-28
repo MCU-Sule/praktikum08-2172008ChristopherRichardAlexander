@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="2172008 Christopher Richard Alexander" />
+    <title>Soal 4</title>
+    <style>
+    table,th,td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    td{
+        width: 30px;
+        height: 15px;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <table>
+      <script>
+        let baris = prompt("Jumlah baris");
+        let kolom = prompt("Jumlah kolom");
+        let warna1 = prompt("Warna 1 (hexadecimal)");
+        let warna2 = prompt("Warna 2 (hexadecimal)");
+        let angka = 0
+
+        for (let i = 0; i < baris; i++) {
+            document.write("<tr>")
+          for (let j = 0; j < kolom; j++) {
+              angka++;
+              if((i+j)%2!=0){
+                document.write("<td bgcolor=#"+warna1+">"+angka+"</td>");
+              }
+              else{
+                document.write("<td bgcolor=#"+warna2+">"+angka+"</td>")
+              }
+          }
+          document.write("</tr>")
+        }
+      </script>
+    </table>
+  </body>
+</html>

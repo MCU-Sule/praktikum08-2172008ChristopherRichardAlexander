@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100%;
+            height: 20px;
+            float: left;
+            text-align: center;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        let jumlah = prompt("Masukan angka")
+        let width = 100;
+        for(let i =1;i<=jumlah;i++){
+            for(let j=1;j<=i;j++){
+                var randomColor = Math.floor(Math.random()*16777215).toString(16);
+                document.write("<div style='background-Color:"+"#"+randomColor+";width:"+width/i+"%'>"+j+"</div>");
+            }
+        }
+    </script>
+</body>
+</html>

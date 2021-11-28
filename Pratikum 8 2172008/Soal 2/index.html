@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="2172008 Christopher Richard Alexander">
+    <title>Soal 2</title>
+</head>
+<body>
+    <script>
+        let bil = prompt("bilangan yang ingin di cek");
+        let pembagi = 0;
+        for(let i=1;i<=bil;i++){
+            if(bil%i==0){
+                pembagi++;
+            }
+        }
+        if(pembagi==2){
+            document.write("Bilangan "+bil+" adalah bilangan prima");
+        }
+        else{
+            document.write("Bilangan "+bil+" bukan bilangan prima");
+        }
+    </script>
+</body>
+</html>
